@@ -4,6 +4,7 @@ const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
+        {/* Text Section */}
         <div className="w-full lg:w-1/2 ">
           <div className="flex flex-col items-center lg:items-start">
             <h1 className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl">
@@ -16,10 +17,11 @@ const Hero = () => {
               {HERO_CONTENT}
             </p>
           </div>
-          <div className="w-full lg:w-1/2 lg:p-8">
-            <div className="flex justify-center place">
-              <img src={profilePic} alt="Donte Bailey" />
-            </div>
+        </div>
+        {/* Profile Picture */}
+        <div className="flex flex-row w-full lg:w-1/4 justify-start">
+          <div className="flex justify-center place">
+            <img src={profilePic} alt="Donte Bailey" />
           </div>
         </div>
       </div>
